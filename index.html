@@ -13,11 +13,142 @@
 
 <body>
   <!-- Valentyn D -->
-  <header class="header">
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque perferendis, vero magnam repudiandae
-        libero, eveniet officiis beatae quos nihil rem expedita facilis incidunt fuga, optio itaque earum distinctio
-        rerum qui!</p>
+  <!-- Header section -->
+<header class="header">
+  <div class="header-container container">
+    <!-- Navigation -->
+    <nav class="header-nav">
+      <a class="header-logo logo link" href="./index.html">
+        <span class="header-logo-first">SIMPLY</span>
+        <span class="header-logo-second">CHOCOLATE</span>
+        <svg class="header-logo-icon" width="21" height="21">
+          <use href="./images/icons.svg#logo-icon"></use>
+        </svg>
+      </a>
+
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="toggle-icon" width="28" height="28">
+          <use href="./images/icons.svg#burger-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="header-nav-list list">
+        <li class="nav-item">
+          <a class="header-link link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="header-link link active" href="#How it’s made?"
+            >How it’s made?</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="header-link link" href="#Our products">Our products</a>
+        </li>
+        <li class="nav-item">
+          <a class="header-link link" href="#Top sellers">Top sellers</a>
+        </li>
+        <li class="nav-item">
+          <a class="header-link link" href="#Chocolate is loved"
+            >Chocolate is loved</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header socials -->
+    <ul class="header-social-list list">
+      <li class="header-social-item">
+        <a
+          class="header-social-link link"
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram icon"
+        >
+          <svg class="header-social-icon" width="24" height="24">
+            <use href="./images/icons.svg#instagram-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-social-item">
+        <a
+          class="header-social-link link"
+          href="https://twitter.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Twitter icon"
+        >
+          <svg class="header-social-icon" width="24" height="24">
+            <use href="./images/icons.svg#twitter-icon"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
 </header>
+
+<!-- MOBILE MENU -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg class="mobile-close-icon" width="28" height="28">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu list">
+    <li class="mobile-menu-item">
+      <a href="./index.html" class="mobile-menu-link active link">Home</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#How it’s made?" class="mobile-menu-link link">How it’s made?</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#Our products" class="mobile-menu-link link">Our products</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#Top sellers" class="mobile-menu-link link">Top sellers</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a href="#Chocolate is loved" class="mobile-menu-link link"
+        >Chocolate is loved</a
+      >
+    </li>
+  </ul>
+
+  <ul class="menu-social-list list">
+    <li class="menu-social-item">
+      <a
+        class="menu-social-link link"
+        href="https://www.instagram.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram icon"
+      >
+        <svg class="menu-social-icon" width="22" height="22">
+          <use href="./images/icons.svg#instagram-icon"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="menu-social-item">
+      <a
+        class="menu-social-link link"
+        href="https://twitter.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Twitter icon"
+      >
+        <svg class="menu-social-icon" width="20" height="20">
+          <use href="./images/icons.svg#twitter-icon"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
 
   <main>
     <!-- Anton -->
