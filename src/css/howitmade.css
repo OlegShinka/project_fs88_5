@@ -1,0 +1,103 @@
+.made-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .made-title {
+    line-height: 28px;
+  }
+}
+
+.made-title-span {
+  color: #fd9222;
+}
+
+.made-uppertitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #111111;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.made-img {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(pastry-chef-preparing-chocolate-cake.jpg);
+  border-radius: 15px;
+}
+
+.made-list-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+
+.made-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 18px;
+}
+
+.made-list {
+  list-style: circle;
+
+  /*list-style: #4c4c4c;
+    border: 1px solid #eceded; 
+     position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 0px;
+    top: 5px; */
+}
+
+.made-container {
+  padding: 0 20px;
+}
+
+.made-list-container {
+  background: #ffffff;
+  border-radius: 15px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+  max-width: 335px;
+  max-height: 456px;
+}
+
+@media only screen and (min-width: 768px) {
+  .made-list-container {
+    max-width: 614px;
+    max-height: 854px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .made-list-container {
+    max-width: 516px;
+    max-height: 400px;
+  }
+}
