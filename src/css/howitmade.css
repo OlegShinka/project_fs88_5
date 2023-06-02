@@ -39,11 +39,11 @@
   margin-bottom: 20px;
 }
 
-.made-img {
+/* .made-img {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(pastry-chef-preparing-chocolate-cake.jpg);
   border-radius: 15px;
-}
+} */
 
 .made-list-text {
   font-family: 'Montserrat';
