@@ -1,0 +1,117 @@
+/* --primary-text-color: #ffffff;
+  --primary-bg-color: #ffffff;
+  --secondary-text-color: #111111;
+  --acent-text-color: #FD9222;
+  --secondary-bg-color: #1E1823;
+  --primary-btn-bg-color: #FD9222;
+  --secondary-btn-bg-color: #1E1823;
+  --hover-btn-bg-color: #FCF1E0; */
+/* footer { */
+.div-f {
+  position: relative;
+}
+.div-footer {
+  max-width: 375px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  /* font-weight: 400; */
+  font-size: 14px;
+  line-height: 1.29;
+  /* #ffffff --primary-text-color */
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.div-footer:after {
+  position: absolute;
+  top: 224px;
+  left: 20px;
+  content: '';
+
+  background-color: #d9d9d9;
+  height: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  width: 335px;
+}
+.footer-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  width: 300px;
+  padding-bottom: 32px;
+}
+
+.footer-title-accent {
+  color: var(--acent-text-color);
+}
+.footer-addr-sociallist {
+  display: flex;
+  column-gap: calc(100% - 169px - 58px - 32px);
+  margin-bottom: 64px;
+}
+.p-footer-address {
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 14px;
+
+  /*font-size: 14px;
+line-height: 18px; */
+  /* identical to box height, or 129% */
+}
+
+.footer-address {
+  position: relative;
+  font-style: normal;
+}
+
+.footer-address-list:last-child::after {
+  position: absolute;
+  top: 104px;
+  left: 0;
+  content: '';
+  /* background-color: brown; */
+  background-color: #d9d9d9;
+  height: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* display: block; */
+  width: 335px;
+  /* width: calc(100% - 40px);*/
+}
+
+.footer-address-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.footer-link-addr {
+}
+
+.footer-socialnet-list {
+  display: flex;
+  column-gap: 14px;
+}
+
+.footer-socialnet-item {
+}
+
+.footer-social-link {
+}
+
+.footer-socialnet-svg {
+  stroke: var(--primary-text-color);
+}
+.footer-menu {
+}
+
+.footer-menu-item {
+  font-weight: 500;
+  /* font-size: 14px; */
+  line-height: 1.14;
+}
+
+.footer-menu-item:not(:last-child) {
+  margin-bottom: 18px;
+}
