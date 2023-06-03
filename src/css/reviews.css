@@ -1,0 +1,160 @@
+.review-section {
+  padding: 72px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .review-section {
+    padding: 100px 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .review-section {
+    padding: 128px 0;
+  }
+}
+
+.review-header {
+  margin-bottom: 74px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  color: var(--acent-text-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .review-header {
+    margin-bottom: 91px;
+
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.review-header-span {
+  color: var(--secondary-text-color);
+}
+
+.review-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  margin-bottom: 65px;
+}
+
+@media only screen and (min-width: 768px) {
+  .review-list {
+    margin-bottom: 94px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .review-list {
+    gap: 28px;
+  }
+}
+
+.review-item {
+  position: relative;
+  width: 335px;
+  height: 200px;
+
+  background: var(--primary-bg-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .review-item {
+    width: 344px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .review-item {
+    width: 360px;
+  }
+}
+
+.review-block {
+  position: absolute;
+  left: 0px;
+  top: -42px;
+  margin: 0 auto;
+}
+
+.review-img {
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+.review-name {
+  margin-bottom: 24px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+
+  color: var(--secondary-text-color);
+}
+
+.review-text {
+  max-width: 300px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.review-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 28px;
+
+  min-width: 165px;
+  height: 41px;
+
+  background: var(--main-bg-color);
+  border: 1px solid var(--acent-text-color);
+  border-radius: 100px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+
+  color: var(--secondary-text-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .review-btn {
+    padding: 14px 40px;
+
+    min-width: 222px;
+    height: 50px;
+
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.review-btn:hover,
+.review-btn:focus {
+  background: var(--primary-btn-bg-color);
+  border: none;
+  color: var(--hover-btn-bg-color);
+}
