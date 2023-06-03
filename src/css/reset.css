@@ -15,6 +15,17 @@ ul {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 a {
   color: currentColor;
   text-decoration: none;
@@ -28,4 +39,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  object-fit: cover;
+  object-position: center;
 }
