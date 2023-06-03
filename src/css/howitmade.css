@@ -101,7 +101,6 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 18px;
-  list-style: unset;
 }
 
 .made-list {
@@ -122,7 +121,9 @@
 
 .made-list-container {
   background: #ffffff;
+
   border-radius: 15px;
+
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -144,5 +145,6 @@
   .made-list-container {
     max-width: 516px;
     min-height: 400px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
