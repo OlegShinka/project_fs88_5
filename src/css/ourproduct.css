@@ -11,6 +11,11 @@
     margin-bottom: 32px;
     margin-top: 72px;
 }
+@media only screen and (min-width: 768px) {
+  .ourproducts-title {
+    margin-bottom: 50px;
+  }
+}
 .ourproducts-title-orange{
     color: var(--acent-text-color);
 }
@@ -52,10 +57,15 @@
     .products-list-item {
         width: 270px;
         padding: 32px 20px;
+        margin-bottom: 32px;
     }
+    
+}
+@media only screen and (max-width: 1199px) {
     .products-list-item:nth-child(n+3) {
-    display: none;
-  }
+        display: none;
+    }
+
 }
 .products-item-img {
     
