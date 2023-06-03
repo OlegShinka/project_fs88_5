@@ -1,24 +1,12 @@
-/* --primary-text-color: #ffffff;
-  --primary-bg-color: #ffffff;
-  --secondary-text-color: #111111;
-  --acent-text-color: #FD9222;
-  --secondary-bg-color: #1E1823;
-  --primary-btn-bg-color: #FD9222;
-  --secondary-btn-bg-color: #1E1823;
-  --hover-btn-bg-color: #FCF1E0; */
-/* footer { */
-
 .div-footer {
   max-width: 375px;
   font-family: 'Montserrat';
   font-style: normal;
-  /* font-weight: 400; */
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   /* #ffffff --primary-text-color */
   color: var(--primary-text-color);
-
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -26,12 +14,18 @@
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .div-footer {
     max-width: 768px;
-    /* max-width: 600px; */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .div-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
 .div-f {
-  max-width: 768px;
+  max-width: 1200px;
   background-color: var(--secondary-bg-color);
 }
 
@@ -41,11 +35,22 @@
   margin-bottom: 64px;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-title-addr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-title-addr {
     max-width: 768px;
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 78px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer-title-addr {
+    max-width: 1200px;
+    margin-bottom: 86px;
   }
 }
 
@@ -65,26 +70,29 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
-
   width: 300px;
-  padding-bottom: 32px;
-  /* display: block;
-  margin: auto;*/
+  margin-bottom: 32px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) {
   .footer-title {
     font-size: 28px;
     line-height: 1.21;
     margin-right: 124px;
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer-title {
+    margin-right: 543px;
   }
 }
 
 .footer-title-accent {
   color: var(--acent-text-color);
 }
+/* ------------телефон та мило------------  */
 .footer-addr-sociallist {
   display: flex;
-
   column-gap: 113px;
 }
 @media only screen and (max-width: 375px) {
@@ -99,14 +107,15 @@
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .footer-addr-sociallist {
+    column-gap: 65px;
+  }
+}
 .p-footer-address {
   font-weight: 500;
   font-style: normal;
   margin-bottom: 14px;
-
-  /*font-size: 14px;
-line-height: 18px; */
-  /* identical to box height, or 129% */
 }
 
 .footer-address {
@@ -117,20 +126,9 @@ line-height: 18px; */
   margin-bottom: 4px;
 }
 
-/* .footer-address-item:last-child::after {
-  position: absolute;
-  top: calc(100% + 32px);
-  left: 0px;
-  content: '';
-  background-color: #d9d9d9;
-  height: 0;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  width: 335px;
-} */
-
 .footer-link-addr {
 }
-
+/* --------Ссилки на  соціальні мережі------------ */
 .footer-socialnet-list {
   display: flex;
   column-gap: 14px;
@@ -155,7 +153,8 @@ line-height: 18px; */
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+/* -------------меню навігації*------------- */
+@media only screen and (min-width: 768px) {
   .footer-menu {
     display: flex;
     column-gap: 24px;
@@ -164,10 +163,14 @@ line-height: 18px; */
 
 .footer-menu-item {
   font-weight: 500;
-  /* font-size: 14px; */
   line-height: 1.14;
 }
 
 .footer-menu-item:not(:last-child) {
   margin-bottom: 18px;
+}
+@media only screen and (min-width: 768px) {
+  .footer-menu-item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
