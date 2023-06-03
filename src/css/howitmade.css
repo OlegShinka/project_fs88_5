@@ -21,7 +21,7 @@
 }
 
 .made-title-span {
-  color: #fd9222;
+  color: var(--acent-text-color);
 }
 
 .made-img-icon {
