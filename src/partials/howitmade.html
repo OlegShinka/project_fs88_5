@@ -5,17 +5,22 @@
     </h1>
     <div class="made-img-container">
       <img
-        src="./img/howitmadeimg/image_desk@1x.jpg"
-        srcset="./img/howitmadeimg/image_mob@1x.jpg 1x 335w,
-            ./img/howitmadeimg/image_mob@2x.jpg 2x 335w,
-            ./img/howitmadeimg/image_tab@1x.jpg 1x 400w 614h,
-            ./img/howitmadeimg/image_tab@2x.jpg 2x 400w 614h,
-            ./img/howitmadeimg/image_desk@1x.jpg 1x 400w,
-            ./img/howitmadeimg/image_desk@2x.jpg 2x 400w"
-        sizes="(min-width: 1200px) 400w, (min-width: 768px) 400w 614h, (min-width: 375px) 335w"
+        src="./img/howitmadeimg/image_mob@1x.jpg"
+        srcset="
+          ./img/howitmadeimg/image_mob@1x.jpg   335w,
+          ./img/howitmadeimg/image_desk@1x.jpg  600w,
+          ./img/howitmadeimg/image_tab@1x.jpg   614w,
+          ./img/howitmadeimg/image_mob@2x.jpg   670w,
+          ./img/howitmadeimg/image_desk@2x.jpg 1200w,
+          ./img/howitmadeimg/image_tab@2x.jpg  1218w
+        "
+        sizes="(min-width: 1200px) 600px,
+          (min-width: 768px) 614px,
+          (min-width: 375px) 335px"
         alt="video of chocolate"
         class="made-img"
       />
+
       <svg height="35" width="35" class="made-img-icon">
         <use href="./img/icons.svg#play"></use>
       </svg>
