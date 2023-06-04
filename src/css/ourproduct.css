@@ -103,4 +103,13 @@
     line-height: 17px;
     color: var(--secondary-text-color);
     padding: 8px 20px;
+    transition-property: background-color, color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.price-btn:hover,
+.price-btn:focus{
+    background: var(--acent-text-color);
+    color: var(--primary-text-color);
+    border: 1px solid var(--acent-text-color);
 }
