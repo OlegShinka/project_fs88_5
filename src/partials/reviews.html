@@ -1,40 +1,126 @@
-<section class="review-section">
-    <div class="review-container container">
-        <h2 class="review-header">chocolate <span class="review-header-span">is loved</span></h2>
-        <ul class="review-list list">
-            <li class="review-item">
-                <div class="review-block">
-                    <img class="review-img" src="./images/review/review-victoria-dobrzhanska.jpg"
-                        alt="Photo Victoria Dobrzhanska" width="80" height="80" />
-                    <h3 class="review-name">Victoria Dobrzhanska</h3>
-                    <p class="review-text">I love this chocolate bar. Perfect combination of light crispy wafer, covered
-                        in a thin layer chocolate.</p>
-                </div>
-            </li>
-            <li class="review-item">
-                <div class="review-block">
-                    <img class="review-img" src="./images/review/review-nazar-babenko.jpg"
-                        alt="Photo Victoria Dobrzhanska" width="80" height="80" />
-                    <h3 class="review-name">Nazar Babenko</h3>
-                    <p class="review-text">
-                        This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut
-                        cream is smooth, and the chocolate is
-                        good.
-                    </p>
-                </div>
-            </li>
-            <li class="review-item">
-                <div class="review-block">
-                    <img class="review-img" src="./images/review/review-olena-kampusch.jpg"
-                        alt="Photo Victoria Dobrzhanska" width="80" height="80" />
-                    <h3 class="review-name">Olena Kampusch</h3>
-                    <p class="review-text">
-                        Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess
-                        inside. The wafer is soft but crunchy.
-                    </p>
-                </div>
-            </li>
-        </ul>
-        <button type="button" class="review-btn btn">Leave a review</button>
-    </div>
+<section id="#chocolateisloved" class="review-section">
+  <div class="container">
+    <h2 class="review-header">
+      chocolate <span class="review-header-span">is loved</span>
+    </h2>
+    <ul class="review-list list">
+      <li class="review-item">
+        <div class="review-block">
+          <img
+            class="review-img"
+            srcset="
+              ./img/review/photo_victoria_dobrzhanska_@1x.png 1x,
+              ./img/review/photo_victoria_dobrzhanska_@2x.png 2x
+            "
+            src="./img/review/photo_victoria_dobrzhanska_@1x.png"
+            alt="Photo Victoria Dobrzhanska"
+            width="80"
+            height="80"
+          />
+          <h3 class="review-name">Victoria Dobrzhanska</h3>
+          <p class="review-text">
+            I love this chocolate bar. Perfect combination of light crispy
+            wafer, covered in a thin layer chocolate.
+          </p>
+        </div>
+      </li>
+      <li class="review-item">
+        <div class="review-block">
+          <img
+            class="review-img"
+            srcset="
+              ./img/review/photo-nazar-babenko_@1x.png 1x,
+              ./img/review/photo-nazar-babenko_@2x.png 2x
+            "
+            src="./img/review/photo-nazar-babenko_@1x.png"
+            alt="Photo Nazar Babenko"
+            width="80"
+            height="80"
+          />
+          <h3 class="review-name">Nazar Babenko</h3>
+          <p class="review-text">
+            This chocolate confection is a delight! A delight! The wafer is
+            light and crisp, the hazelnut cream is smooth, and the chocolate is
+            good.
+          </p>
+        </div>
+      </li>
+      <li class="review-item">
+        <div class="review-block">
+          <img
+            class="review-img"
+            srcset="
+              ./img/review/photo-olena-kampusch_@1x.png 1x,
+              ./img/review/photo-olena-kampusch_@2x.png 2x
+            "
+            src="./img/review/photo-olena-kampusch_@1x.png"
+            alt="Photo Olena Kampusch"
+            width="80"
+            height="80"
+          />
+          <h3 class="review-name">Olena Kampusch</h3>
+          <p class="review-text">
+            Chocolate is a family favourite treat. Love the delicious smooth
+            chocolate and the creaminess inside. The wafer is soft but crunchy.
+          </p>
+        </div>
+      </li>
+    </ul>
+    <button type="button" class="review-btn btn" data-second-modal-open>
+      Leave a review
+    </button>
+  </div>
 </section>
+
+<div class="backdrop is-hidden" data-second-modal>
+  <div class="review-modal">
+    <button type="button" class="modal-close" data-second-modal-close>
+      <svg class="modal-close-icon" width="24" height="24">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="review-modal-header">
+      leave a review about
+      <span class="review-modal-header-span">our chocolate</span>
+    </h2>
+    <form name="review-form">
+      <div class="review-modal-input-group">
+        <div class="review-input">
+          <p class="review-input-text">Name</p>
+          <label class="review-modal-label">
+            <input type="text" name="user_name" class="review-modal-input" />
+          </label>
+        </div>
+        <div class="review-input">
+          <p class="review-input-text">Enter your email</p>
+          <label class="review-modal-label">
+            <input type="email" name="user_email" class="review-modal-input" />
+          </label>
+        </div>
+        <div class="review-input">
+          <div class="review-phone">
+            <svg class="modal-phone-icon" width="24" height="24">
+              <use href="./img/icons.svg#flag"></use>
+            </svg>
+            <p class="phone-text">+380</p>
+          </div>
+          <p class="review-input-text phone">Phone number</p>
+          <label class="review-modal-label">
+            <input type="tel" name="user_phone" class="review-modal-input" />
+          </label>
+        </div>
+        <div class="review-input">
+          <p class="review-input-text">Enter text</p>
+          <label class="review-modal-label">
+            <textarea
+              name="user_comment"
+              class="review-modal-input-comment"
+              rows="3"
+            ></textarea>
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="review-modal-button">Send</button>
+    </form>
+  </div>
+</div>
