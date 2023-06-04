@@ -12,7 +12,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <script type="module" crossorigin src="/project_fs88_5/assets/index-49868123.js"></script>
-  <link rel="stylesheet" href="/project_fs88_5/assets/index-78108195.css">
+  <link rel="stylesheet" href="/project_fs88_5/assets/index-7aeb4731.css">
 </head>
 
 <body>
@@ -711,12 +711,14 @@
         <span class="sub-span">NEW CHOCOLATE</span> FIRST!
       </p>
       <form class="sub-form">
-        <label class="sub-modal-label" for=""
-          ><input
+        <label class="sub-modal-label">
+          <input
             class="sub-modal-input"
             type="email"
             name="subscribe"
             placeholder="Enter your email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
         /></label>
         <button class="sub-modal-btn" type="submit">Submit</button>
       </form>
