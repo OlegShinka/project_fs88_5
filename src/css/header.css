@@ -158,18 +158,31 @@
   display: flex;
   flex-direction: column;
 
-  width: 100vw;
+  width: 220px;
   height: 100vh;
 
   background-color: var(--secondary-bg-color);
   z-index: 999;
 
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition: transform 250ms ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-container {
+    width: 290px;
+    transform: translateX(100vw);
+  }
 }
 
 .menu-container.is-open {
   transform: translateX(0);
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-container.is-open {
+    transform: translateX(calc(100vw - 290px));
+  }
 }
 
 .menu-container .menu-toggle {
