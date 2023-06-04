@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/project_fs88_5/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simply Chocolate</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <script type="module" crossorigin src="/project_fs88_5/assets/index-f0431b59.js"></script>
+    <link rel="stylesheet" href="/project_fs88_5/assets/index-c5be8326.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/project_fs88_5/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simply Chocolate</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <script type="module" crossorigin src="/project_fs88_5/assets/index-f0431b59.js"></script>
-  <link rel="stylesheet" href="/project_fs88_5/assets/index-71f334d6.css">
-</head>
-
-<body>
-  <!-- Valentyn D -->
-  <!-- Header section -->
+  <body>
+    <!-- Valentyn D -->
+    <!-- Header section -->
 <header id="home" class="header">
   <div class="header-container container">
     <!-- Navigation -->
@@ -155,9 +158,9 @@
 </header>
 
 
-  <main>
-    <!-- Anton -->
-    <section class="hero" id="hero">
+    <main>
+      <!-- Anton -->
+      <section class="hero" id="hero">
   <div class="container">
     <div class="hero-container">
       <h1 class="visually-hidden">Simply chocolate </h1>
@@ -181,7 +184,7 @@
     </div>
   </div>
 </section>
-    <section class="adv" id="advantages">
+      <section class="adv" id="advantages">
   <div class="container">
 
     <h2 class="visually-hidden">Our advantages</h2>
@@ -234,10 +237,10 @@
 
   </div>
 </section>
-    <!-- Karina -->
-    
-    <!-- Zarina -->
-    <section id="howitsmade" class="how-its-made-section">
+      <!-- Karina -->
+      
+      <!-- Zarina -->
+      <section id="howitsmade" class="how-its-made-section">
   <div class="made-container container">
     <h2 class="made-title">
       HOW IT'S <span class="made-title-span">MADE?</span>
@@ -317,8 +320,8 @@
   </div>
 </section>
 
-    <!-- Maria -->
-    <section class="container products-container">
+      <!-- Maria -->
+      <section class="container products-container">
     <h2 id="our products" class="ourproducts-title">Our <span class="ourproducts-title-orange">products</span></h2>
     <div class="products-list-container">
         <ul class="products-list">
@@ -385,10 +388,10 @@
         </ul>
     </div>
 </section>
-    <!-- Stas -->
-    
-    <!-- Kateryna -->
-    <section class="review-section">
+      <!-- Stas -->
+      
+      <!-- Kateryna -->
+      <section class="review-section">
     <div class="review-container container">
         <h2 class="review-header">chocolate <span class="review-header-span">is loved</span></h2>
         <ul class="review-list list">
@@ -428,12 +431,56 @@
         <button type="button" class="review-btn btn">Leave a review</button>
     </div>
 </section>
-    <!-- Nazar -->
-    
-  </main>
-  <footer>
-    <!-- Olexandr -->
-    <div class="div-f">
+      <!-- Nazar -->
+      <section class="sub-section">
+  <div class="container">
+    <div class="sub-container">
+      <h2 class="sub-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+      <p class="sub-txt">
+        From the velvety texture to the rich and complex flavor, our New
+        Chocolate is a true indulgence that will leave you craving more. Made
+        with only the finest ingredients and handcrafted with the utmost care,
+        each piece is a work of art that is sure to please.
+      </p>
+      <button class="sub-btn" type="button" data-modal-open>Subscribe</button>
+    </div>
+  </div>
+  <div class="sub-backdrop sub-is-hidden" data-modal>
+    <div class="sub-modal sub_mod_img">
+      <button class="modal-btn" type="button" data-modal-close>
+        <svg class="modal-icon" width="8" height="8">
+          <use href="/project_fs88_5/assets/icons-06a5ca03.svg#icon-close"></use>
+        </svg>
+      </button>
+      <img
+        src="/project_fs88_5/assets/mod_sub_mob@1x-b03e32b0.jpg"
+        alt="modal chocolate"
+        width="311"
+        height="169"
+      />
+      <p class="sub-modal-txt">
+        EXPLORE OUR <br />
+        <span class="sub-span">NEW CHOCOLATE</span> FIRST!
+      </p>
+      <form class="sub-form">
+        <label class="sub-modal-label" for=""
+          ><input
+            class="sub-modal-input"
+            type="email"
+            name="subscribe"
+            placeholder="Enter your email"
+        /></label>
+        <button class="sub-modal-btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="/js/modal.js"></script>
+</section>
+
+    </main>
+    <footer>
+      <!-- Olexandr -->
+      <div class="div-f">
   <div class="div-footer container">
     <div class="footer-title-addr">
       <h2 class="footer-title">
@@ -517,11 +564,10 @@
   </div>
 </div>
 
-  </footer>
+    </footer>
 
-  <script src="./js/modal.js"></script>
-  <script defer src="js/menu-mobile.js"></script>
-  
-</body>
-
+    <script src="./js/modal.js"></script>
+    <script defer src="js/menu-mobile.js"></script>
+    
+  </body>
 </html>
