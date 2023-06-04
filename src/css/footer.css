@@ -1,3 +1,7 @@
+.div-f {
+  background-color: var(--secondary-bg-color);
+  margin: 0 auto;
+}
 .div-footer {
   max-width: 375px;
   font-family: 'Montserrat';
@@ -22,11 +26,6 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
-}
-
-.div-f {
-  max-width: 1200px;
-  background-color: var(--secondary-bg-color);
 }
 
 .footer-title-addr {
@@ -126,22 +125,15 @@
   margin-bottom: 4px;
 }
 
-.footer-link-addr {
-}
 /* --------Ссилки на  соціальні мережі------------ */
 .footer-socialnet-list {
   display: flex;
   column-gap: 14px;
 }
 
-.footer-socialnet-item {
-}
-
-.footer-social-link {
-}
-
 .footer-socialnet-svg {
   stroke: var(--primary-text-color);
+  fill: transparent;
   width: 22px;
   height: 22px;
 }
