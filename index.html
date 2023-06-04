@@ -12,7 +12,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <script type="module" crossorigin src="/project_fs88_5/assets/index-49868123.js"></script>
-  <link rel="stylesheet" href="/project_fs88_5/assets/index-b7f8efa4.css">
+  <link rel="stylesheet" href="/project_fs88_5/assets/index-ae0011b2.css">
 </head>
 
 <body>
@@ -529,18 +529,23 @@
         with only the finest ingredients and handcrafted with the utmost care,
         each piece is a work of art that is sure to please.
       </p>
-      <button class="sub-btn" type="button" data-modal-open>Subscribe</button>
+      <button class="sub-btn" type="button" data-third-modal-open>
+        Subscribe
+      </button>
     </div>
   </div>
-  <div class="sub-backdrop sub-is-hidden" data-modal>
+  <div class="sub-backdrop is-hidden" data-third-modal>
     <div class="sub-modal sub_mod_img">
-      <button class="modal-btn" type="button" data-modal-close>
-        <svg class="modal-icon" width="8" height="8">
-          <use href="/project_fs88_5/assets/icons-cb9c3951.svg#icon-close"></use>
+      <button class="sub-close-btn" type="button" data-third-modal-close>
+        <svg class="sub-close-icon" width="24" height="24">
+          <use href="../img/icons.svg#icon-close"></use>
         </svg>
       </button>
       <img
-        src="/project_fs88_5/assets/mod_sub_mob@1x-b03e32b0.jpg"
+        class="sub-img"
+        srcset="/project_fs88_5/assets/mod_sub_mob311@1x-b03e32b0.jpg 311w, /project_fs88_5/assets/mod_sub_tab538@1x-f755d9c7.jpg 538w, /project_fs88_5/assets/mod_sub_mob622@2x-5983f127.jpg 622w, /project_fs88_5/assets/mod_sub_tab1076@2x-1a2809d3.jpg 1076w"
+        sizes="(min-width: 768px) 538px, (min-width: 320px) 311px, 100vw"
+        src="/project_fs88_5/assets/mod_sub_mob311@1x-b03e32b0.jpg"
         alt="modal chocolate"
         width="311"
         height="169"
@@ -561,7 +566,6 @@
       </form>
     </div>
   </div>
-  <script src="/js/modal.js"></script>
 </section>
 
   </main>
