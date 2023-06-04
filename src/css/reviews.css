@@ -241,6 +241,13 @@
   stroke: var(--secondary-text-color);
 }
 
+.modal-close-icon:focus,
+.modal-close-icon:hover {
+  stroke: var(--primary-btn-bg-color);
+  background-color: #fcf1e0;
+  border-radius: 50%;
+}
+
 .review-modal-header {
   margin-bottom: 32px;
 
@@ -287,6 +294,7 @@
 
 .review-input-text {
   position: absolute;
+  pointer-events: none;
   top: 14px;
   left: 18px;
   z-index: 10;
@@ -319,11 +327,21 @@
   }
 }
 
-.review-input-text.phone::before {
+.review-modal-input.phone {
+  padding-left: 106px;
+}
+
+@media only screen and (min-width: 768px) {
+  .review-modal-input.phone {
+    padding-left: 177px;
+  }
+}
+
+.review-phone::after {
   content: '';
   position: absolute;
   top: 0;
-  left: -14px;
+  left: 74px;
   display: block;
 
   width: 1px;
@@ -332,8 +350,8 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .review-input-text.phone::before {
-    left: -28px;
+  .review-phone::after {
+    left: 125px;
   }
 }
 
@@ -409,13 +427,18 @@
 @media only screen and (min-width: 768px) {
   .review-modal-input-comment {
     height: 137px;
+    padding: 22px 24px;
   }
 }
 
 .review-modal-input:focus,
 .review-modal-input-comment:focus {
-  border: 1px solid var(--primary-brand);
+  border: 1px solid var(--primary-btn-bg-color);
   outline: none;
+}
+
+.review-modal-input:focus + .review-input-text {
+  color: transparent;
 }
 
 .review-modal-button {
