@@ -17,10 +17,10 @@
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #fd9222;
+  color: var(--acent-text-color);
 }
 .top-sellers-part {
-  color: #111111;
+  color: var(--secondary-text-color);
 }
 
 .top-sellers-paragraf {
@@ -30,9 +30,18 @@
   font-size: 14px;
   line-height: 18px;
 
+  width: 306px;
+  max-width: 330px;
+
   letter-spacing: -0.02em;
 
-  color: #111111;
+  color: var(--secondary-text-color);
+}
+
+@media only screen and (min-width: 1200px) {
+  .top-sellers-paragraf {
+    width: 407px;
+  }
 }
 
 /* Modal Window */
@@ -69,7 +78,7 @@
   transform: translate(-50%, -50%);
   width: 609px;
   min-height: 990px;
-  background-color: #fafafa;
+  background-color: var(--main-bg-color);
   border-radius: 15px;
 
   height: 1058px;
@@ -128,7 +137,7 @@
   width: 162px;
   height: 50px;
 
-  background: #fd9222;
+  background: var(--acent-text-color);
   border-radius: 100px;
 }
 
@@ -136,6 +145,11 @@
   display: flex;
   justify-content: flex-end;
   justify-content: space-between;
+}
+@media only screen and (min-width: 768px) {
+  .top-sellers-buy {
+    display: flex;
+  }
 }
 
 .hero-buy-btn {
@@ -148,22 +162,4 @@
   background-color: var(--hover-btn-bg-color);
   border: 1px solid var(--hover-btn-bg-color);
   color: var(--primary-btn-bg-color);
-}
-
-.top-sellers-paragraf {
-  display: flex;
-  width: 407px;
-
-  max-width: 330px;
-  height: 72px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-
-  letter-spacing: -0.02em;
-
-  color: #111111;
 }
