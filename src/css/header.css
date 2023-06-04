@@ -5,9 +5,6 @@
   }
 }
 
-.container {
-  outline: 1px solid tomato;
-}
 .header-nav {
   display: flex;
   align-items: center;
