@@ -1,0 +1,279 @@
+.sub-section {
+  padding: 62px 0;
+  background-color: var(--secondary-bg-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-image: url('../img/subscribe/sub_mob@1x.jpg');
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .sub-section {
+    background-image: url('../img/subscribe/sub_mob@2x.jpg');
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sub-section {
+    padding: 72px 0;
+    background-image: url('..img/subscribe/sub_tab@1x.jpg');
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .sub-section {
+      background-image: url('../img/subscribe/sub_tab@2x.jpg');
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .sub-section {
+    background-image: url('../img/subscribe/sub_desk@1x.jpg');
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .sub-section {
+      background-image: url('../img/subscribe/sub_desk@2x.jpg');
+    }
+  }
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.sub-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: var(--primary-text-color);
+  margin: 0 auto;
+  max-width: 291px;
+}
+@media only screen and (min-width: 768px) {
+  .sub-title {
+    font-size: 24px;
+    line-height: 1.17;
+    min-width: 378px;
+  }
+}
+
+.sub-txt {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--primary-text-color);
+  max-width: 326px;
+}
+@media only screen and (min-width: 768px) {
+  .sub-txt {
+    min-width: 467px;
+  }
+}
+
+.sub-btn {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.214;
+  width: 128px;
+  color: var(--primary-text-color);
+  background-color: var(--primary-btn-bg-color);
+  border: 1px solid var(--primary-btn-bg-color);
+  margin: 0;
+  padding: 12px 26px;
+  border-radius: 100px;
+  transition-property: background-color, border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sub-btn:hover {
+  color: var(--primary-btn-bg-color);
+  background-color: var(--hover-btn-bg-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .sub-btn {
+    width: 172px;
+    height: 50px;
+  }
+}
+
+/**
+  |============================
+  | Modal
+  |============================
+*/
+/* .sub_mod_img {
+  background-color: var(--secondary-bg-color);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  overflow: hidden;
+  background-image: url('../img/subscribe/mod_sub_mob@1x.jpg');
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .sub-section {
+    background-image: url('../img/subscribe/mod_sub_mob@2x.jpg');
+  }
+} */
+
+.sub-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sub-is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.sub-modal {
+  position: absolute;
+  top: calc(50%);
+  left: calc(50%);
+  transform: translate(-50%, -50%) scale(1);
+  width: 311px;
+  height: 350px;
+  background-color: #fcfcfc;
+  border-radius: 15px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media only screen and (min-width: 768px) {
+  .sub-modal {
+    width: 538px;
+    height: 412px;
+  }
+}
+.backdrop.is-hidden .modal {
+  opacity: 0;
+  transform: translate(-50%, -70%);
+  transition-delay: 0ms;
+}
+.modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+
+  background-color: #e7e9fc;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--ocean-cl);
+  border: none;
+  fill: #ffffff;
+}
+.modal-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sub-modal-txt {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 32px 24px 24px;
+  letter-spacing: -0.03em;
+  color: var(--secondary-text-color);
+}
+.sub-span {
+  color: var(--acent-text-color);
+}
+@media only screen and (min-width: 768px) {
+  .sub-modal-txt {
+    font-size: 24px;
+    line-height: 1.17;
+    margin: 40px 40px 28px;
+  }
+}
+
+.sub-form {
+  display: flex;
+  justify-content: flex-end;
+  margin: 32px 24px;
+}
+@media only screen and (min-width: 768px) {
+  .sub-form {
+    margin: 0 40px 40px 40px;
+  }
+}
+
+.sub-modal-label {
+  width: 100%;
+}
+.sub-modal-input {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  padding: 14px 18px;
+  border: 1.5px solid var(--secondary-text-color);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 25px;
+  color: #404040;
+}
+@media only screen and (min-width: 768px) {
+  .sub-modal-input {
+    width: 313px;
+    height: 52px;
+  }
+}
+
+.sub-modal-btn {
+  position: absolute;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.214;
+  width: 100px;
+  height: 45px;
+  color: var(--primary-text-color);
+  background-color: var(--primary-btn-bg-color);
+  border: 1px solid var(--primary-btn-bg-color);
+  margin: 0;
+  padding: 14px 22px;
+  border-radius: 100px;
+  transition-property: background-color, border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  .sub-modal-btn {
+    width: 137px;
+    height: 52px;
+  }
+}
