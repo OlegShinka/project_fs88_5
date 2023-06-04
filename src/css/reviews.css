@@ -47,12 +47,12 @@
   align-items: center;
   gap: 16px;
 
-  margin-bottom: 65px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
   .review-list {
-    margin-bottom: 94px;
+    margin-bottom: 31px;
   }
 }
 
@@ -169,6 +169,43 @@
   background: var(--primary-btn-bg-color);
   border: none;
   color: var(--hover-btn-bg-color);
+}
+
+/* Swiper Slider */
+
+.swiper-wrapper-pagination {
+  width: 106px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper-wrapper-pagination {
+    margin-bottom: 50px;
+  }
+}
+
+.swiper-pagination {
+  display: flex;
+  gap: 13px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 28px;
+  height: 13px;
+
+  opacity: 1;
+  border-radius: 13px;
+  background: #fd9222;
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+
+  opacity: 1;
+  border-radius: 13px;
+  background: rgba(17, 17, 17, 0.1);
 }
 
 /* Modal Window */
@@ -369,10 +406,17 @@
 
 @media only screen and (min-width: 768px) {
   .review-phone {
-    top: 22px;
+    top: 17px;
     left: 24px;
 
     gap: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-phone-icon {
+    width: 32px;
+    height: 32px;
   }
 }
 
