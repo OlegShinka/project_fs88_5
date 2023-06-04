@@ -22,9 +22,27 @@
 
 .made-list-icon {
   display: flex;
-  position: absolute;
-  margin-top: 3px;
-  margin-left: -12px;
+
+  position: relative;
+  top: 13px;
+  left: -13px;
+}
+
+.made-list-item {
+  max-width: 291px;
+}
+
+@media only screen and (min-width: 768px) {
+  .made-list-item {
+    max-width: 464px;
+    margin-left: 48px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .made-list-item {
+    max-width: 436px;
+  }
 }
 
 .made-title-span {
@@ -38,8 +56,29 @@
   position: relative;
   width: 44px;
   height: 44px;
-  left: calc(50%);
-  bottom: 178px;
+  left: 150px;
+  bottom: 250px;
+}
+
+@media only screen and (max-width: 334px) {
+  .made-img-icon {
+    left: 125px;
+    bottom: 225px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .made-img-icon {
+    left: 285px;
+    bottom: 200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .made-img-icon {
+    left: 278px;
+    bottom: 200px;
+  }
 }
 
 .made-img-container {
@@ -88,11 +127,11 @@
   margin-bottom: 20px;
 }
 
-/* .made-img {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(pastry-chef-preparing-chocolate-cake.jpg);
-  border-radius: 15px;
-} */
+@media only screen and (min-width: 768px) {
+  .made-uppertitle {
+    margin-left: 32px;
+  }
+}
 
 .made-list-text {
   font-family: 'Montserrat';
@@ -106,20 +145,17 @@
 
 .made-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   row-gap: 18px;
 }
 
-.made-list {
-  /* list-style: circle; */
-
-  /*list-style: #4c4c4c;
-    border: 1px solid #eceded; 
-     position: absolute;
-    width: 8px;
-    height: 8px;
-    left: 0px;
-    top: 5px; */
+@media only screen and (min-width: 768px) {
+  .made-list {
+    align-items: start;
+    justify-content: start;
+  }
 }
 
 .made-container {
@@ -137,7 +173,6 @@
   z-index: 1;
   max-width: 335px;
   padding: 20px 14px;
-  margin-bottom: 72px;
 }
 
 @media only screen and (min-width: 768px) {
