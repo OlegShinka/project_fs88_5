@@ -139,8 +139,8 @@
   column-gap: 14px;
 }
 
-.footer-socialnet-svg:hover,
-.footer-socialnet-svg:focus {
+.footer-social-link:hover .footer-socialnet-svg,
+.footer-social-link:focus .footer-socialnet-svg {
   stroke: var(--acent-text-color);
 }
 
