@@ -18,7 +18,7 @@
 @media only screen and (min-width: 768px) {
   .sub-section {
     padding: 72px 0;
-    background-image: url('..img/subscribe/sub_tab@1x.jpg');
+    background-image: url('../img/subscribe/sub_tab@1x.jpg');
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -31,6 +31,8 @@
 
 @media only screen and (min-width: 1200px) {
   .sub-section {
+    max-width: 1200px;
+    margin: 0 auto;
     background-image: url('../img/subscribe/sub_desk@1x.jpg');
   }
   @media (min-device-pixel-ratio: 2),
@@ -99,7 +101,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sub-btn:hover {
+.sub-btn:hover,
+.sub-btn:focus {
   color: var(--primary-btn-bg-color);
   background-color: var(--hover-btn-bg-color);
 }
@@ -145,7 +148,7 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.sub-is-hidden {
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -174,32 +177,43 @@
   transform: translate(-50%, -70%);
   transition-delay: 0ms;
 }
-.modal-btn {
+.sub-close-btn {
+  min-width: 24px;
+  min-height: 24px;
   position: absolute;
   top: 24px;
   right: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  cursor: pointer;
 
-  background-color: #e7e9fc;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: var(--ocean-cl);
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
   border: none;
-  fill: #ffffff;
+  border-radius: 50%;
+  outline: none;
 }
-.modal-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.sub-close-btn:hover,
+.sub-close-btn:focus {
+  background-color: #fcf1e0;
+}
+
+.sub-close-icon {
+  stroke: var(--primary-text-color);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media only screen and (min-width: 768px) {
+  .sub-close-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+.sub-close-icon:hover,
+.sub-close-icon:focus {
+  stroke: var(--acent-text-color);
 }
 
 .sub-modal-txt {
@@ -275,5 +289,16 @@
   .sub-modal-btn {
     width: 137px;
     height: 52px;
+  }
+}
+
+.sub-img {
+  width: 311px;
+  height: 169px;
+}
+@media only screen and (min-width: 768px) {
+  .sub-img {
+    width: 538px;
+    height: 196px;
   }
 }

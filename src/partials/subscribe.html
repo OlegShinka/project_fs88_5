@@ -8,18 +8,28 @@
         with only the finest ingredients and handcrafted with the utmost care,
         each piece is a work of art that is sure to please.
       </p>
-      <button class="sub-btn" type="button" data-modal-open>Subscribe</button>
+      <button class="sub-btn" type="button" data-third-modal-open>
+        Subscribe
+      </button>
     </div>
   </div>
-  <div class="sub-backdrop sub-is-hidden" data-modal>
+  <div class="sub-backdrop is-hidden" data-third-modal>
     <div class="sub-modal sub_mod_img">
-      <button class="modal-btn" type="button" data-modal-close>
-        <svg class="modal-icon" width="8" height="8">
-          <use href="/img/icons.svg#icon-close"></use>
+      <button class="sub-close-btn" type="button" data-third-modal-close>
+        <svg class="sub-close-icon" width="24" height="24">
+          <use href="../img/icons.svg#icon-close"></use>
         </svg>
       </button>
       <img
-        src="../src/img/subscribe/mod_sub_mob@1x.jpg"
+        class="sub-img"
+        srcset="
+          ./img/subscribe/mod_sub_mob311@1x.jpg   311w,
+          ./img/subscribe/mod_sub_tab538@1x.jpg   538w,
+          ./img/subscribe/mod_sub_mob622@2x.jpg   622w,
+          ./img/subscribe/mod_sub_tab1076@2x.jpg 1076w
+        "
+        sizes="(min-width: 768px) 538px, (min-width: 320px) 311px, 100vw"
+        src="./img/subscribe/mod_sub_mob311@1x.jpg"
         alt="modal chocolate"
         width="311"
         height="169"
@@ -40,5 +50,4 @@
       </form>
     </div>
   </div>
-  <script src="/js/modal.js"></script>
 </section>
