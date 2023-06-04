@@ -20,6 +20,13 @@
   }
 }
 
+.made-list-icon {
+  display: flex;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: -12px;
+}
+
 .made-title-span {
   color: var(--acent-text-color);
 }
@@ -129,7 +136,6 @@
   flex-grow: 0;
   z-index: 1;
   max-width: 335px;
-  max-height: 456px;
   padding: 20px 14px;
   margin-bottom: 72px;
 }
