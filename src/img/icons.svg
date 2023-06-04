@@ -56,8 +56,10 @@
     <symbol id="btn_act" viewBox="0 0 69 32">
      <path fill="#fd9222" style="fill: var(--color1, #fd9222)" d="M52.923 0h-36.923c-8.837 0-16 7.163-16 16s7.163 16 16 16h36.923c8.837 0 16-7.163 16-16s-7.163-16-16-16z"></path>
     </symbol>
-    <symbol id="btn-psv" viewBox="0 0 32 32">
-      <path style="fill: var(--color1, #4c4c4c)" d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16c-8.837 0-16 7.163-16 16s7.163 16 16 16z"></path>
-    </symbol> 
-      </defs>
+    <symbol id="play" viewBox="0 0 32 32">
+      <path fill="#f5f4f4" style="fill: var(--color6, #f5f4f4)" d="M10.909 24v-15.273l14.545 7.636-14.545 7.636z"></path>
+      <path fill="none" stroke="#fff" style="stroke: var(--color7, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7273" d="M31.636 16c0 8.636-7.001 15.636-15.636 15.636s-15.636-7.001-15.636-15.636c0-8.636 7.001-15.636 15.636-15.636s15.636 7.001 15.636 15.636z"></path>
+    </symbol>
+
+  </defs>
 </svg>

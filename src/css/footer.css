@@ -1,7 +1,5 @@
-.div-f {
-  background-color: var(--secondary-bg-color);
-  margin: 0 auto;
-}
+.div-f {}
+
 .div-footer {
   max-width: 375px;
   font-family: 'Montserrat';
@@ -40,12 +38,14 @@
     flex-wrap: wrap;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-title-addr {
     max-width: 768px;
     margin-bottom: 78px;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .footer-title-addr {
     max-width: 1200px;
@@ -72,6 +72,7 @@
   width: 300px;
   margin-bottom: 32px;
 }
+
 @media only screen and (min-width: 768px) {
   .footer-title {
     font-size: 28px;
@@ -80,6 +81,7 @@
     margin-bottom: 0px;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .footer-title {
     margin-right: 543px;
@@ -89,11 +91,13 @@
 .footer-title-accent {
   color: var(--acent-text-color);
 }
+
 /* ------------телефон та мило------------  */
 .footer-addr-sociallist {
   display: flex;
   column-gap: 113px;
 }
+
 @media only screen and (max-width: 375px) {
   .footer-addr-sociallist {
     column-gap: calc(100% - 169px - 58px);
@@ -111,6 +115,7 @@
     column-gap: 65px;
   }
 }
+
 .p-footer-address {
   font-weight: 500;
   font-style: normal;
@@ -161,6 +166,7 @@
 .footer-menu-item:not(:last-child) {
   margin-bottom: 18px;
 }
+
 @media only screen and (min-width: 768px) {
   .footer-menu-item:not(:last-child) {
     margin-bottom: 0;
