@@ -50,23 +50,16 @@
       <path fill="#f5f4f4" style="fill: var(--color6, #f5f4f4)" d="M10.909 24v-15.273l14.545 7.636-14.545 7.636z"></path>
       <path fill="none" stroke="#fff" style="stroke: var(--color7, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7273" d="M31.636 16c0 8.636-7.001 15.636-15.636 15.636s-15.636-7.001-15.636-15.636c0-8.636 7.001-15.636 15.636-15.636s15.636 7.001 15.636 15.636z"></path>
     </symbol>
-
-    <!-- other -->
-    <symbol id="flag" viewBox="0 0 41 32">
-      <path fill="#ffd700" style="fill: var(--color1, #ffd700)" d="M40.745 1.355h-40.434v30.090h40.434v-30.090z"></path>
-      <path fill="#0057b7" style="fill: var(--color2, #0057b7)" d="M0.311 1.355h40.434v15.045h-40.434v-15.045z"></path>
+    <symbol id="marker" viewBox="0 0 32 32">
+      <path fill="#4c4c4c" style="fill: var(--color1, #4c4c4c); stroke: var(--color2, #eceded)" stroke="#eceded" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M30 16c0 7.732-6.268 14-14 14s-14-6.268-14-14c0-7.732 6.268-14 14-14s14 6.268 14 14z"></path>
     </symbol>
-    <symbol id="mastercard" viewBox="0 0 51 32">
-      <path fill="#ed0006" style="fill: var(--color3, #ed0006)" d="M25.6 26.935c-2.556 2.194-5.873 3.518-9.496 3.518-8.086 0-14.641-6.593-14.641-14.726s6.555-14.726 14.641-14.726c3.624 0 6.94 1.324 9.496 3.518 2.557-2.194 5.873-3.518 9.497-3.518 8.086 0 14.64 6.593 14.64 14.726s-6.555 14.726-14.64 14.726c-3.624 0-6.94-1.324-9.497-3.518z"></path>
-      <path fill="#f9a000" style="fill: var(--color4, #f9a000)" d="M25.6 26.935c3.148-2.701 5.144-6.72 5.144-11.209s-1.996-8.507-5.144-11.208c2.556-2.194 5.873-3.518 9.497-3.518 8.086 0 14.64 6.593 14.64 14.726s-6.555 14.726-14.64 14.726c-3.624 0-6.94-1.324-9.497-3.518z"></path>
-      <path fill="#ff5e00" style="fill: var(--color5, #ff5e00)" d="M25.6 26.935c3.148-2.701 5.144-6.72 5.144-11.208s-1.996-8.507-5.144-11.208c-3.148 2.701-5.144 6.72-5.144 11.208s1.996 8.507 5.144 11.208z"></path>
+    <symbol id="btn_act" viewBox="0 0 69 32">
+     <path fill="#fd9222" style="fill: var(--color1, #fd9222)" d="M52.923 0h-36.923c-8.837 0-16 7.163-16 16s7.163 16 16 16h36.923c8.837 0 16-7.163 16-16s-7.163-16-16-16z"></path>
     </symbol>
     <symbol id="play" viewBox="0 0 32 32">
       <path fill="#f5f4f4" style="fill: var(--color6, #f5f4f4)" d="M10.909 24v-15.273l14.545 7.636-14.545 7.636z"></path>
       <path fill="none" stroke="#fff" style="stroke: var(--color7, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7273" d="M31.636 16c0 8.636-7.001 15.636-15.636 15.636s-15.636-7.001-15.636-15.636c0-8.636 7.001-15.636 15.636-15.636s15.636 7.001 15.636 15.636z"></path>
     </symbol>
-<symbol id="marker" viewBox="0 0 32 32">
-      <path fill="#4c4c4c" style="fill: var(--color1, #4c4c4c); stroke: var(--color2, #eceded)" stroke="#eceded" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M30 16c0 7.732-6.268 14-14 14s-14-6.268-14-14c0-7.732 6.268-14 14-14s14 6.268 14 14z"></path>
-    </symbol>
+
   </defs>
 </svg>
