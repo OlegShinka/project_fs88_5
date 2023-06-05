@@ -225,6 +225,24 @@
   transition: opacity 300ms linear, visibility 300ms linear;
 }
 
+@media only screen and (max-width: 374px) and (max-height: 532px) {
+  .backdrop {
+    overflow-y: scroll;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 766px) {
+  .backdrop {
+    overflow-y: scroll;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-height: 688px) {
+  .backdrop {
+    overflow-y: scroll;
+  }
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -250,6 +268,27 @@
   border-radius: 15px;
 
   transition: transform 300ms linear;
+}
+
+@media only screen and (max-width: 374px) and (max-height: 532px) {
+  .review-modal {
+    top: 30px;
+    transform: translate(-50%) scale(1);
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-height: 532px) {
+  .review-modal {
+    top: 30px;
+    transform: translate(-50%) scale(1);
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-height: 688px) {
+  .review-modal {
+    top: 30px;
+    transform: translate(-50%) scale(1);
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -325,11 +364,11 @@
   }
 }
 
-.review-input {
+.review-wrap {
   position: relative;
 }
 
-.review-input-text {
+/* .review-input-text {
   position: absolute;
   pointer-events: none;
   top: 14px;
@@ -342,9 +381,9 @@
   letter-spacing: -0.02em;
 
   color: rgba(64, 64, 64, 0.3);
-}
+} */
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .review-input-text {
     top: 22px;
     left: 24px;
@@ -352,7 +391,7 @@
     font-size: 18px;
     line-height: 1.22;
   }
-}
+} */
 
 .review-input-text.phone {
   left: 106px;
@@ -443,6 +482,12 @@
   height: 45px;
   padding: 14px 18px;
 
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: var(--secondary-text-color);
+
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
@@ -452,6 +497,9 @@
   .review-modal-input {
     height: 66px;
     padding: 22px 24px;
+
+    font-size: 18px;
+    line-height: 1.22;
   }
 }
 
@@ -481,8 +529,26 @@
   outline: none;
 }
 
-.review-modal-input:focus + .review-input-text {
+/* .review-modal-input:focus + .review-input-text {
   color: transparent;
+} */
+
+.review-modal-input::placeholder,
+.review-modal-input-comment::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+
+  color: rgba(64, 64, 64, 0.3);
+}
+
+@media only screen and (min-width: 768px) {
+  .review-modal-input::placeholder,
+  .review-modal-input-comment::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 .review-modal-button {
