@@ -77,7 +77,7 @@
 .hero {
   width: 100%;
   background-color: var(--main-bg-color);
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 
 .hero-container {
@@ -263,7 +263,9 @@
 }
 
 .hero-anchor-footer:hover .scroll-icon-box,
-.hero-anchor-footer:focus .scroll-icon-box {
+.hero-anchor-footer:focus .scroll-icon-box,
+.anchor-home:hover,
+.anchor-home:focus {
   background-color: var(--primary-btn-bg-color);
 }
 
@@ -283,6 +285,17 @@
 }
 
 .hero-anchor-footer:hover .scroll-icon,
-.hero-anchor-footer:focus .scroll-icon {
+.hero-anchor-footer:focus .scroll-icon,
+.anchor-home:hover .scroll-icon,
+.anchor-home:focus .scroll-icon {
   fill: var(--primary-bg-color);
+}
+
+.anchor-home {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  transform: rotate(180deg) scale(1.4);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  z-index: 2;
 }
