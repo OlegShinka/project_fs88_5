@@ -16,6 +16,11 @@
 @import url('./subscribe.css');
 @import url('./footer.css');
 
+@import url('./modal_buynow.css');
+@import url('./modal_reviews.css');
+@import url('./modal_subscribe.css');
+
+
 /* підключення шрифтів */
 
 @font-face {
