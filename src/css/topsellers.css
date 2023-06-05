@@ -94,6 +94,9 @@
 .buy-now-chocolate-bar-icon {
 }
 .buy-now-form {
+  display: inline-flex;
+  margin-bottom: 8px;
+  margin-top: 18px;
 }
 .buy-now-firm-field {
 }
