@@ -82,9 +82,11 @@
       type="button"
       data-first-modal-close
     >
-      <svg class="buy-now-close-icon" width="14" heigth="14"></svg>
-      <use href="./img/icons.svg#icon-close"></use>
+      <svg class="buy-now-close-icon" width="14" height="14">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
     </button>
+
     <strong class="top-sellers-logo"
       >BUY<span class="top-sellers-part"> NOW</span></strong
     >
@@ -128,6 +130,7 @@
         </li>
       </ul>
     </div>
+
     <form name="Personal information">
       <label class="buy-now-form" for="user-name">Personal information</label>
       <div>
@@ -154,6 +157,7 @@
           class="buy-now-firm-field"
           placeholder="Enter your email"
           type="email"
+          name="user-email"
           id="user-email"
           required
         />
@@ -175,7 +179,7 @@
       <div>
         <input
           class="buy-now-firm-field"
-          placeholder="Enter  card"
+          placeholder="Enter card"
           type="tel"
           name="card"
           id="user-card"
