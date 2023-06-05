@@ -1,147 +1,108 @@
 /* Modal Window */
 .buy-now-backdrop {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  margin: 0 auto;
-  width: 311px;
-  min-height: 471px;
-  padding: 32px 24px;
-  background: var(--main-bg-color);
-  border-radius: 15px;
-  transition: transform 300ms linear;
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .buy-now-backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
-
-.buy-now-modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 609px;
-  min-height: 994px;
-  padding: 48px 69px 48px 48px;
-  background-color: var(--main-bg-color);
-  border-radius: 15px;
-
-  transition: transform var(--main-bg-color);
+.buy-now-backdrop.is-hidden .buy-now-modal {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1);
 }
-
-@media only screen and (min-width: 768px) {
-  .buy-now-modal {
-    width: 517px;
-    min-height: 628px;
-    padding: 40px;
-
-    overflow-y: scroll;
-  }
-}
-
-.buy-now-modal.is-hidden .buy-now-backdrop {
-  transform: translate(-50%, -90%);
-}
-
 .buy-now-chocolate-bar {
   display: flex;
   justify-content: center;
 }
-
-.buy-now-modal.is-hidden {
-  display: flex;
+.buy-now-modal {
   position: absolute;
-  top: 50%;
+  top: 100px;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 609px;
-  min-height: 990px;
+  transform: translate(-50%, 0) scale(1);
+  width: 311px;
+  min-height: 994px;
+  padding: 32px 24px;
   background-color: var(--main-bg-color);
   border-radius: 15px;
-
-  top: 100px;
-  transform: translate(-50%) scale(1);
-
-  height: 1058px;
-  border-radius: 15px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+@media only screen and (min-width: 768px) {
+  .buy-now-modal {
+    width: 609px;
+    min-height: 1058px;
+    padding: 48px;
+  }
+}
 .buy-now-modal-close-btn {
-  min-height: 5px;
-  min-width: 5px;
-  margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin: 0;
   padding: 0;
-  background-color: var(--main-bg-color);
   cursor: pointer;
-  border: none;
-  outline: none;
-  /*top: 14px;
+  position: absolute;
+  top: 14px;
   right: 14px;
- 
-  
-  padding: 0;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
   border: none;
-  background-color: transparent; */
 }
-
+@media only screen and (min-width: 768px) {
+  .buy-now-modal-close-btn {
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+  }
+}
+.buy-now-modal-close-btn:hover,
+.buy-now-modal-close-btn:focus {
+  background-color: var(--hover-btn-bg-color);
+}
 .buy-now-close-icon {
   stroke: var(--secondary-text-color);
 }
-
 .buy-now-menu-snacks {
   display: flex;
   justify-content: center;
   gap: 56px;
 }
-
-.sellers-hero-btn {
-  display: inline-block;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.214;
-  color: var(--primary-text-color);
-
-  margin: 0;
-  padding: 12px 26px;
-  border-radius: 100px;
-  transition-property: background-color, border-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+.buy-now-menu {
+}
+.buy-now-menu-snacks {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 16px 50px;
-  gap: 14px;
-
-  width: 162px;
-  height: 50px;
-
-  background: var(--acent-text-color);
-  border-radius: 100px;
+  justify-content: center;
+  gap: 56px;
 }
-
+.buy-now-menu-snacks-card {
+}
+.buy-now-chocolate-bar {
+}
+.image {
+}
+.buy-now-chocolate-bar-gram {
+}
+.buy-now-chocolate-bar-icon {
+}
 .buy-now-form {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: -0.02em;
-  color: #000000;
 }
-
+.buy-now-firm-field {
+}
+.buy-now-form-comment {
+}
+.sellers-hero-btn {
+}
+.sellers-hero-buy-btn {
+}
 /* TOP-SELLERS */
 
 .top-sellers-buy {
