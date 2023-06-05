@@ -67,7 +67,7 @@
   gap: 56px;
 }
 
-.hero-btn {
+.sellers-hero-btn {
   display: inline-block;
   font-style: normal;
   font-weight: 600;
@@ -106,13 +106,13 @@
   }
 }
 
-.hero-buy-btn {
+.sellers-hero-buy-btn {
   background-color: var(--primary-btn-bg-color);
   border: 1px solid var(--primary-btn-bg-color);
 }
 
-.hero-buy-btn:hover,
-.hero-buy-btn:focus {
+.sellers-hero-buy-btn:hover,
+.sellers-hero-buy-btn:focus {
   background-color: var(--hover-btn-bg-color);
   border: 1px solid var(--hover-btn-bg-color);
   color: var(--primary-btn-bg-color);
