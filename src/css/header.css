@@ -177,8 +177,12 @@
   background-color: var(--secondary-bg-color);
   z-index: 999;
 
-  transform: translateX(-100%);
+  transform: translateX(100vw);
   transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(calc(100vw - 220px));
 }
 
 @media only screen and (min-width: 768px) {
@@ -186,10 +190,6 @@
     width: 290px;
     transform: translateX(100vw);
   }
-}
-
-.menu-container.is-open {
-  transform: translateX(0);
 }
 
 @media only screen and (min-width: 768px) {

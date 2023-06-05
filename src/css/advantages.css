@@ -2,23 +2,12 @@
   width: 100%;
   background-color: var(--secondary-bg-color);
   padding: 20px 0;
-  margin-bottom: 72px;
 }
 
 @media only screen and (min-width: 768px) {
   .adv {
     padding: 50px 0;
-    margin-bottom: 100px;
   }
-}
-
-@media only screen and (min-width: 1200px) {
-  .adv {
-    margin-bottom: 128px;
-  }
-}
-
-.adv-container {
 }
 
 .adv-list {
