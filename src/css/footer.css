@@ -61,8 +61,7 @@
   position: absolute;
   top: calc(100% + 32px);
   left: 0px;
-
-  background-color: #d9d9d9;
+  /* background-color: #d9d9d9; */
   height: 0;
   border: 1px solid rgba(255, 255, 255, 0.1);
   width: 100%;
@@ -139,8 +138,8 @@
   column-gap: 14px;
 }
 
-.footer-socialnet-svg:hover,
-.footer-socialnet-svg:focus {
+.footer-social-link:hover .footer-socialnet-svg,
+.footer-social-link:focus .footer-socialnet-svg {
   stroke: var(--acent-text-color);
 }
 
