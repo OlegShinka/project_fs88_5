@@ -1,6 +1,7 @@
-/* Top-sellers */
 .top-sellers {
+  padding-top: 72px;
 }
+
 .top-sellers-container {
   position: relative;
 }
@@ -32,7 +33,6 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--acent-text-color);
-  padding-top: 72px;
   margin-bottom: 32px;
 }
 @media only screen and (min-width: 768px) {
@@ -98,10 +98,7 @@
     width: 407px;
   }
 }
-.top-sellers-buy {
-  display: flex;
-  margin-top: 20px;
-}
+
 .top-sellers-buy {
   display: flex;
   justify-content: center;
