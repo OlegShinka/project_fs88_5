@@ -58,9 +58,11 @@
 }
 
 .made-img-container {
-  display: block;
+  display: flex;
   position: relative;
   margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -139,7 +141,11 @@
   padding-left: 48px;
 }
 
-/* list */
+@media only screen and (max-width: 767px) {
+  .made-list {
+    padding-left: 0;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .made-list {
