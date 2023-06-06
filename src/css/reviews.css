@@ -15,7 +15,7 @@
 }
 
 .review-header {
-  margin-bottom: 74px;
+  margin-bottom: 32px;
 
   font-weight: 600;
   font-size: 20px;
@@ -29,7 +29,7 @@
 
 @media only screen and (min-width: 768px) {
   .review-header {
-    margin-bottom: 91px;
+    margin-bottom: 50px;
 
     font-size: 24px;
     line-height: 1.17;
@@ -133,6 +133,7 @@
   display: block;
   margin: 0 auto;
   padding: 12px 28px;
+  margin-top: 32px;
 
   min-width: 165px;
   height: 41px;
@@ -156,6 +157,7 @@
 @media only screen and (min-width: 768px) {
   .review-btn {
     padding: 14px 40px;
+    margin-top: 50px;
 
     min-width: 222px;
     height: 50px;
@@ -174,30 +176,39 @@
 
 /* Swiper Slider */
 
-.swiper-wrapper-pagination {
-  width: 106px;
-  margin: 0 auto;
-  margin-bottom: 32px;
+.swiper {
+  padding-top: 42px;
+  width: 335px;
+}
+@media only screen and (min-width: 768px) {
+  .swiper {
+    width: 704px;
+  }
 }
 
-@media only screen and (min-width: 768px) {
-  .swiper-wrapper-pagination {
-    margin-bottom: 50px;
+@media only screen and (min-width: 1200px) {
+  .swiper {
+    width: 1136px;
   }
+}
+
+.swiper-wrapper-pagination {
+  margin-top: 20px;
 }
 
 .swiper-pagination {
   display: flex;
+  justify-content: center;
   gap: 13px;
+
+  position: relative;
+  margin-top: 28px;
 }
 
-.swiper-pagination-bullet-active {
-  width: 28px;
-  height: 13px;
-
-  opacity: 1;
-  border-radius: 13px;
-  background: #fd9222;
+@media only screen and (min-width: 768px) {
+  .swiper-pagination {
+    margin-top: 40px;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -207,4 +218,13 @@
   opacity: 1;
   border-radius: 13px;
   background: rgba(17, 17, 17, 0.1);
+}
+
+.swiper-pagination-bullet-active {
+  width: 28px;
+  height: 13px;
+
+  opacity: 1;
+  border-radius: 13px;
+  background: var(--primary-btn-bg-color);
 }
