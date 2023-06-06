@@ -1,6 +1,14 @@
-.footerd {
+.footer {
   background-color: var(--secondary-bg-color);
   margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .div-footer {
@@ -12,20 +20,11 @@
   letter-spacing: -0.02em;
   /* #ffffff --primary-text-color */
   color: var(--primary-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .div-footer {
     max-width: 768px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .div-footer {
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
 }
 

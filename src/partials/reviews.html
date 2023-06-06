@@ -3,9 +3,9 @@
     <h2 class="review-header">
       chocolate <span class="review-header-span">is loved</span>
     </h2>
-    <ul class="review-list list">
-      <li class="review-item">
-        <div class="review-block">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="review-item swiper-slide swiper-slide-active">
           <img
             class="review-img"
             srcset="
@@ -23,9 +23,7 @@
             wafer, covered in a thin layer chocolate.
           </p>
         </div>
-      </li>
-      <li class="review-item">
-        <div class="review-block">
+        <div class="review-item swiper-slide">
           <img
             class="review-img"
             srcset="
@@ -44,9 +42,7 @@
             good.
           </p>
         </div>
-      </li>
-      <li class="review-item">
-        <div class="review-block">
+        <div class="review-item swiper-slide">
           <img
             class="review-img"
             srcset="
@@ -64,16 +60,72 @@
             chocolate and the creaminess inside. The wafer is soft but crunchy.
           </p>
         </div>
-      </li>
-    </ul>
-    <div class="swiper">
-      <div class="swiper-wrapper-pagination">
-        <div class="swiper-pagination">
-          <span class="swiper-pagination-bullet-active"></span>
-          <span class="swiper-pagination-bullet"></span>
-          <span class="swiper-pagination-bullet"></span>
-          <span class="swiper-pagination-bullet"></span>
+        <div class="review-item swiper-slide">
+          <img
+            class="review-img"
+            srcset="
+              ./img/review/photo_natalia_sus_@1x.png 1x,
+              ./img/review/photo_natalia_sus_@2x.png 2x
+            "
+            src="./img/review/photo_natalia_sus_@1x.png"
+            alt="Photo Natalia Sus"
+            width="80"
+            height="80"
+          />
+          <h3 class="review-name">Natalia Sus</h3>
+          <p class="review-text">
+            The chocolate assortment was delicious. Both dark and milk chocolate
+            pieces were smooth and just right on the sweetness level.
+          </p>
         </div>
+        <div class="review-item swiper-slide">
+          <img
+            class="review-img"
+            srcset="
+              ./img/review/photo_danilo_nottingham_@1x.png 1x,
+              ./img/review/photo_danilo_nottingham_@2x.png 2x
+            "
+            src="./img/review/photo_danilo_nottingham_@1x.png"
+            alt="Photo Danilo Nottingham"
+            width="80"
+            height="80"
+          />
+          <h3 class="review-name">Danilo Nottingham</h3>
+          <p class="review-text">
+            This is delicious. It so rich and flavorful you don't need to use as
+            many. I love topping an apple with almond butter and these chips for
+            a snack.
+          </p>
+        </div>
+        <div class="review-item swiper-slide">
+          <img
+            class="review-img"
+            srcset="
+              ./img/review/photo_irina_tydnyuk_@1x.png 1x,
+              ./img/review/photo_irina_tydnyuk_@2x.png 2x
+            "
+            src="./img/review/photo_irina_tydnyuk_@1x.png"
+            alt="Photo Irina Tydnyuk"
+            width="80"
+            height="80"
+          />
+          <h3 class="review-name">Irina Tydnyuk</h3>
+          <p class="review-text">
+            This is simply the best chocolate around, and I'm just thrilled to
+            support a local company! Best local chocolate - world class :&rpar;
+          </p>
+        </div>
+      </div>
+
+      <div class="swiper-pagination swiper-wrapper-pagination">
+        <span
+          class="swiper-pagination-bullet swiper-pagination-bullet-active"
+        ></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
       </div>
     </div>
     <button type="button" class="review-btn btn" data-second-modal-open>
@@ -81,83 +133,3 @@
     </button>
   </div>
 </section>
-
-<div class="backdrop is-hidden" data-second-modal>
-  <div class="review-modal">
-    <button type="button" class="modal-close" data-second-modal-close>
-      <svg class="modal-close-icon" width="24" height="24">
-        <use href="./img/icons.svg#icon-close"></use>
-      </svg>
-    </button>
-    <h2 class="review-modal-header">
-      leave a review about
-      <span class="review-modal-header-span">our chocolate</span>
-    </h2>
-    <form name="review-form">
-      <div class="review-modal-input-group">
-        <!-- <div class="review-wrap"> -->
-        <!-- <p class="review-input-text">Name</p> -->
-        <label class="review-modal-label">
-          <input
-            type="text"
-            name="user_name"
-            class="review-modal-input"
-            placeholder="Name"
-            required
-            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-            title="Enter your name: two words separated by space"
-          />
-        </label>
-        <!-- </div> -->
-        <!-- <div class="review-wrap"> -->
-        <!-- <p class="review-input-text">Enter your email</p> -->
-        <label class="review-modal-label">
-          <input
-            type="email"
-            name="user_email"
-            class="review-modal-input"
-            placeholder="Enter your email"
-            title="Enter your email: example@mail.com"
-          />
-        </label>
-        <!-- </div> -->
-        <div class="review-wrap">
-          <div class="review-phone">
-            <svg class="modal-phone-icon" width="24" height="24">
-              <use href="./img/icons.svg#flag"></use>
-            </svg>
-            <p class="phone-text">+380</p>
-          </div>
-          <!-- <p class="review-input-text phone">Phone number</p> -->
-          <label class="review-modal-label">
-            <input
-              type="tel"
-              name="user_phone"
-              class="review-modal-input phone"
-              placeholder="Phone number"
-              required
-              pattern="^[0-9]+$"
-              minlength="9"
-              maxlength="9"
-              title="Enter your phone number without +380"
-            />
-          </label>
-        </div>
-        <!-- <div class="review-wrap"> -->
-        <!-- <p class="review-input-text">Enter text</p> -->
-        <label class="review-modal-label">
-          <textarea
-            name="user_comment"
-            class="review-modal-input-comment"
-            rows="3"
-            placeholder="Enter text"
-            required
-            title="Type your review about our chocolate"
-          ></textarea>
-        </label>
-        <!-- </div> -->
-      </div>
-      <button type="submit" class="review-modal-button">Send</button>
-    </form>
-  </div>
-</div>
