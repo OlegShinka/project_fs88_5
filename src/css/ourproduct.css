@@ -1,3 +1,6 @@
+.products-container {
+    padding: 72px 0;
+}
 
 .ourproducts-title {
     font-weight: 600;
@@ -7,7 +10,6 @@
     color: var(--secondary-text-color);  
     text-align: center;
     margin-bottom: 32px;
-    margin-top: 72px;
 }
 @media only screen and (min-width: 768px) {
   .ourproducts-title {
@@ -17,7 +19,8 @@
 .ourproducts-title-orange{
     color: var(--acent-text-color);
 }
-.products-list-container {
+
+.products-list {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -25,7 +28,6 @@
     align-items: center;
     justify-content: center;
 }
-
 @media only screen and (min-width: 768px) {
     .products-list {
         display: flex;
@@ -110,10 +112,9 @@
 }
 
 /* Swiper */
-.swiper-wrapper {
+.ourproducts-swiper-wrapper {
     min-width: 210px;
     margin: 0 auto;
-    
 }
 .swiper-dots-list{
     display: flex;
