@@ -139,6 +139,8 @@
   padding-left: 48px;
 }
 
+/* list */
+
 @media only screen and (min-width: 768px) {
   .made-list {
     align-items: start;
