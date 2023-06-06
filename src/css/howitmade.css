@@ -136,6 +136,7 @@
   justify-content: center;
   flex-wrap: wrap;
   row-gap: 18px;
+  padding-left: 48px;
 }
 
 @media only screen and (min-width: 768px) {
