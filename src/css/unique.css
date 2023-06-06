@@ -149,7 +149,7 @@
   color: #ffffff;
 }
 .unique-components-wrapper-overlay {
-  padding: 28px;
+  padding: 20px;
   position: absolute;
   top: 0;
   left: 0;
@@ -189,17 +189,21 @@
 }
 
 .unique-overlay-container {
-  width: 279px;
+  width: 230px;
   height: 214px;
+  overflow: hidden;
 }
 .unique-overlay-title {
-  margin-bottom: 16px;
+  max-width: 240px;
+  margin-bottom: 8px;
   font-weight: 600;
   font-size: 18px;
-  line-height: 1.22px;
+  line-height: 1.22;
 
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  text-align: start;
+  overflow-wrap: normal;
 
   color: #111111;
 }
@@ -243,6 +247,8 @@
   color: #111111;
 }
 .unique-component-description {
+  display: block;
+  height: auto;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
