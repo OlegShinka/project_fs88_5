@@ -367,4 +367,25 @@
   }
 }
 .sellers-hero-buy-btn {
+  cursor: pointer;
+  padding: 12px 28px;
+  min-width: 120px;
+  height: 41px;
+  background: var(--acent-text-color);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--primary-text-color);
+  border: 1px solid var(--acent-text-color);
+  transition-property: background-color, color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sellers-hero-buy-btn:hover,
+.sellers-hero-buy-btn:focus {
+  background: var(--hover-btn-bg-color);
+  color: var(--acent-text-color);
+  border: 1px solid var(--hover-btn-bg-color);
 }
