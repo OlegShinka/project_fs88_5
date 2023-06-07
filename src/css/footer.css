@@ -131,6 +131,11 @@
   margin-bottom: 4px;
 }
 
+.footer-link-addr:hover,
+.footer-link-addr:focus {
+  color: var(--acent-text-color);
+}
+
 /* --------Ссилки на  соціальні мережі------------ */
 .footer-socialnet-list {
   display: flex;
@@ -141,7 +146,6 @@
 .footer-social-link:focus .footer-socialnet-svg {
   stroke: var(--acent-text-color);
 }
-
 .footer-socialnet-svg {
   stroke: var(--primary-text-color);
   fill: transparent;
@@ -157,6 +161,10 @@
 }
 
 /* -------------меню навігації*------------- */
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  color: var(--acent-text-color);
+}
 @media only screen and (min-width: 768px) {
   .footer-menu {
     display: flex;
