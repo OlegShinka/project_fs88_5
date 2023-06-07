@@ -191,6 +191,8 @@
         width: 270px;
         height: 270px;
         text-align: center;
+        padding-left: 20px;
+        padding-right: 5px;
     }
 }
 
