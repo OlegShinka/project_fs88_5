@@ -191,7 +191,8 @@
         width: 270px;
         height: 270px;
         text-align: center;
-        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 20px;
     }
 }
 
@@ -200,7 +201,7 @@
     height: 230px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     .unique-overlay-container {
         width: 230px;        
     }
